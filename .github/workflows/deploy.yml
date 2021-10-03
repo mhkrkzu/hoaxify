@@ -31,7 +31,7 @@ jobs:
       run: |
         mkdir -p ws/src/main/resources/static
         cp -a frontend/build/. ws/src/main/resources/static/
-        
+      
     - name: Build spring
       run: mvn -B package --file pom.xml
       working-directory: ./ws
