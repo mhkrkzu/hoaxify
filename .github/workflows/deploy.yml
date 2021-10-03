@@ -35,7 +35,7 @@ jobs:
     - name: Build spring
       run: mvn -B package --file pom.xml
       working-directory: ./ws
-    
+  
     - name: SFTP Deploy
       uses: wlixcc/SFTP-Deploy-Action@v1.0
       with:
